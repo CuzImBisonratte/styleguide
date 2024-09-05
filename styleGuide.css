@@ -1,0 +1,191 @@
+/*
+General Rules
+*/
+:root {
+    --primaryColor: #3ac2c2;
+    --secondaryColor: #28c24e;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #333333;
+    --heading1Size: 3rem;
+    --heading2Size: 2.5rem;
+    --heading3Size: 2rem;
+    --subheadingSize: 1.25rem;
+    --paragraphSize: 1rem;
+    --smallTextSize: 0.75rem;
+}
+
+/* 
+Type Scale
+*/
+
+#scaleHeading1 {
+    font-size: var(--heading1Size);
+    font-weight: bold;
+}
+
+#scaleHeading2 {
+    font-size: var(--heading2Size);
+    font-weight: bold;
+}
+
+#scaleHeading3 {
+    font-size: var(--heading3Size);
+    font-weight: bold;
+}
+
+#scaleSubheading {
+    font-size: var(--subheadingSize);
+    font-weight: bold;
+}
+
+#scaleParagraph {
+    font-size: var(--paragraphSize);
+}
+
+#scaleSmalltext {
+    font-size: var(--smallTextSize);
+}
+
+
+/* 
+Colors
+*/
+
+#colorSwatch1 {
+    background-color: var(--white);
+}
+
+#colorSwatch2 {
+    background-color: var(--black);
+}
+
+#colorSwatch3 {
+    background-color: var(--gray);
+}
+
+#colorSwatch4 {
+    background-color: var(--primaryColor);
+}
+
+#colorSwatch5 {
+    background-color: var(--secondaryColor);
+}
+
+/* 
+Buttons & Links
+*/
+
+.button {
+    border-radius: 0.5rem;
+    border: 0;
+    height: 2.5rem !important;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buttonPrimary {
+    background-color: var(--primaryColor);
+    color: #000;
+}
+
+#buttonSecondary {
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    background-color: #000;
+}
+
+#buttonTertiary {
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+    background-color: transparent;
+}
+
+#linkPrimary {
+    color: #3ac2c2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#linkSecondary {
+    color: #28c24e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#linkTertiary {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 
+Layout
+*/
+
+#layoutBox {
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+}
+
+#cardContainer {
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#cardImage {
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#cardTitle {
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cardText {
+    height: var(--paragraphSize);
+    margin-bottom: 0.25rem;
+}
+
+/* 
+Spacing
+*/
+
+#spacingBox1 {
+    width: 0.125rem;
+}
+
+#spacingBox2 {
+    width: 0.25rem;
+}
+
+#spacingBox3 {
+    width: 0.5rem;
+}
+
+#spacingBox4 {
+    width: 0.75rem;
+}
+
+#spacingBox5 {
+    width: 1rem;
+}
+
+#spacingBox6 {
+    width: 1.5rem;
+}
+
+#spacingBox7 {
+    width: 2.5rem;
+}
+
+#spacingBox8 {
+    width: 5rem;
+}
+
+#spacingBox9 {
+    width: 10rem;
+}

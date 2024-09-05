@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nterslak StyleGuide</title>
+        <link rel="stylesheet" href="styleGuide.css" />
+        <link rel="stylesheet" href="metaStuff.css" />
+    </head>
+    <body>
+        <div id="darkbg">
+            <header>Nterslak Interactive Style Guide</header>
+            <div class="container">
+                <div class="typeScaleTitle">
+                    <span>Type scale</span>
+                </div>
+                <div class="typeScale">
+                    <h1 class="scaleHeading" id="scaleHeading1">H1</h1>
+                    <h2 class="scaleHeading" id="scaleHeading2">H2</h2>
+                    <h3 class="scaleHeading" id="scaleHeading3">H3</h3>
+                    <h4 class="scaleHeading" id="scaleSubheading">
+                        Subheading
+                    </h4>
+                    <p class="scaleParagraph" id="scaleParagraph">Paragraph</p>
+                    <span class="scaleSmalltext" id="scaleSmalltext"
+                        >Small Text</span
+                    >
+                </div>
+                <div class="colorsTitle">
+                    <span>Colors</span>
+                </div>
+                <div class="colors">
+                    <div class="colorSwatch" id="colorSwatch1"></div>
+                    <div class="colorSwatch" id="colorSwatch2"></div>
+                    <div class="colorSwatch" id="colorSwatch3"></div>
+                    <div class="colorSwatch" id="colorSwatch4"></div>
+                    <div class="colorSwatch" id="colorSwatch5"></div>
+                </div>
+                <div class="buttonsTitle">
+                    <span>Buttons/Links</span>
+                </div>
+                <div class="buttons">
+                    <button class="button" id="buttonPrimary">Primary</button>
+                    <button class="button" id="buttonSecondary">
+                        Secondary
+                    </button>
+                    <button class="button" id="buttonTertiary">Tertiary</button>
+
+                    <a href="#" class="link" id="linkPrimary">Primary</a>
+                    <a href="#" class="link" id="linkSecondary">Secondary</a>
+                    <a href="#" class="link" id="linkTertiary">Tertiary</a>
+                </div>
+                <div class="layoutTitle">
+                    <span>Layout</span>
+                </div>
+                <div class="layout">
+                    <div class="layoutContainer">
+                        <div class="layoutBox">
+                            <div id="layoutBox"></div>
+                        </div>
+                        <div class="layoutTextButton">
+                            <div id="cardContainer">
+                                <div id="cardImage"></div>
+                                <div id="cardTitle"></div>
+                                <div class="cardText"></div>
+                                <div class="cardText"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacingTitle">
+                    <span>Spacing</span>
+                </div>
+                <div class="spacing">
+                    <div class="spacingBox" id="spacingBox1"></div>
+                    <div class="spacingBox" id="spacingBox2"></div>
+                    <div class="spacingBox" id="spacingBox3"></div>
+                    <div class="spacingBox" id="spacingBox4"></div>
+                    <div class="spacingBox" id="spacingBox5"></div>
+                    <div class="spacingBox" id="spacingBox6"></div>
+                    <div class="spacingBox" id="spacingBox7"></div>
+                    <div class="spacingBox" id="spacingBox8"></div>
+                    <div class="spacingBox" id="spacingBox9"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Output rem width of each element with class "spacingBox" into its innerHTML IN REM
+            for (const element of document.getElementsByClassName(
+                "spacingBox"
+            )) {
+                element.innerHTML =
+                    parseFloat(getComputedStyle(element).width) /
+                        parseFloat(
+                            getComputedStyle(document.documentElement).fontSize
+                        ) +
+                    " rem";
+            }
+        </script>
+    </body>
+</html>
